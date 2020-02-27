@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang=ja>
+  <head>
+    <title>Mask Map | Kasugaisi West</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/data.js"></script>
+  </head>
+  <body>
+    <div class="guide">
+      <span>マーカーをクリック（タップ）して情報を確認してください</span>
+      <ul>
+        <li>在庫あり<img src="https://maps.google.com/mapfiles/ms/icons/green-dot.png"></li>
+        <li>在庫僅か<img src="https://maps.google.com/mapfiles/ms/icons/yellow-dot.png"></li>
+        <li>在庫なし<img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png"></li>
+      </ul>
+    </div>
+    <div id="map"></div>
+    <script>
+    {
+      'use strict';
+
+      const Icons = {
+        green :
+        {icon:'https://maps.google.com/mapfiles/ms/icons/green-dot.png'},
+        yellow :
+        {icon: ' https://maps.google.com/mapfiles/ms/icons/yellow-dot.png'},
+        red :
+        {icon:"https://maps.google.com/mapfiles/ms/icons/red-dot.png"},
+      }
+
+      function initMap() {
+        const location = {lat: 35.2298613, lng: 136.9541083};
+        let map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          styles: [
+            {
+              "featureType": "poi.school",
+              "stylers": [
+                { "visibility": "off" }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "stylers": [
+                { "saturation": -100 }
+              ]
+            },
+          ]
+          zoom: 14
+        });
+
+        // "Data" はheadで読み込んだ"js/data.js"から取得
+        for (let num in Data) {
+          const contentStr =
+            `<h2>${Data[num]['name']}</h2>
+            <p>${Data[num]['text']}</p>
+            <span>最終更新: ${Data[num]['updateData']}</span><br/>
+            <span>対応可能時間: ${Data[num]['time']}</span><br/>
+            <span>${Data[num]['address']}</span><br/>
+            <span>Tel: xxxx-oo-xxxx</span><br/>
+            <span>
+            <a href=${Data[num]['link']}>
+            ${Data[num]['link']}</a></span>`;
+
+          const infowindow =new google.maps.InfoWindow({
+            content: contentStr
+          });
+
+          const marker = new google.maps.Marker({
+            position: Data[num]['latlng'],
+            map: map,
+            icon: Icons[Data[num]['stat']].icon,
+            title: Data[num]['name'],
+          });
+
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+        }
+      }
+    }
+    </script>
+<!-- {{ API KEY }}部分は 取得したAPIキーに置換 -->
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ API KEY }}=initMap"
+    async defer></script>
+  </body>
+</html>

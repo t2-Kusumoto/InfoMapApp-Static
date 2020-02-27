@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#map {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.guide {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 20%;
+  padding: 1em;
+  background: #fff;
+  font-size: 20%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+li > img {
+  width: 15%;
+}
+
+
+@media (max-width: 480px) {
+  .guide {
+    width: 50%;
+  }
