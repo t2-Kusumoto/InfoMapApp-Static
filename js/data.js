@@ -1,7 +1,7 @@
 const Data = {
   no_1: {
     // "info window" に表示する各ポイント毎のデータ
-    "updateData": "2020年2月25日 00：00",
+    "update": "2020年2月25日 00：00",
     "name": "△△市役所",
     "stat": "green",
     "time": "08:30 ~ 17:15",
@@ -12,7 +12,7 @@ const Data = {
     "link": "https://exsample.com"
   },
   no_2: {
-    "updateData": "2020年2月25日 00：00",
+    "update": "2020年2月25日 00：00",
     "name": "××県△△保健所",
     "stat": "yellow",
     "time": "08:45 ~ 17:30",
@@ -23,7 +23,7 @@ const Data = {
     "link": "https://exsample.com"
   },
   no_3: {
-    "updateData": "2020年2月25日 00：00",
+    "update": "2020年2月25日 00：00",
     "stat": "red",
     "name": "△△井〇〇郵便局",
     "time": "09:00 ~ 17:00",
