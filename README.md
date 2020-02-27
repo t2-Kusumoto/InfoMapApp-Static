@@ -12,7 +12,7 @@ no_△: {
   "stat": "green",
   "time": "08:30 ~ 17:15",
   "address": "xx県△△市〇〇町1丁目〇〇" ,
-  "latlng": {lat: 35.2479304, lng: 136.971527},
+  "latlng": {lat: 20.42576, lng: 136.0812308},
   "tel": "000-0000-0000",
   "text": "test text test text test text test text test text",
   "link": "https://exsample.com"
