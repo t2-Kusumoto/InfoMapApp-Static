@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=ja>
   <head>
-    <title>Mask Map | Kasugaisi West</title>
+    <title>Mask Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
@@ -59,7 +59,7 @@
             <hr/>
             <span>更新日時: ${Data[num]['update']}</span><br/>
             <span>住所: ${Data[num]['address']}</span><br/>
-            <span>Tel: xxxx-oo-xxxx</span>
+            <span>Tel: ${Data[num]['tel']}</span>
             <p>${Data[num]['text']}</p>`;
 
           const infowindow =new google.maps.InfoWindow({

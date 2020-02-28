@@ -3,18 +3,20 @@
 ## Description  
 マスクの在庫状況を**手動**で更新して、グーグルマップ上に表示させる  
 
-_js/data.js_　の値を置き換えていけばOK！
-```
+![map image](./img/mapImage.png)  
 
-no_△: {
-  "update": "2020年2月25日 00：00",
-  "name": "△△市役所",
-  "stock": "green",
-  "time": "08:30 ~ 17:15",
-  "address": "xx県△△市〇〇町1丁目〇〇" ,
-  "latlng": {lat: 20.42576, lng: 136.0812308},
-  "tel": "000-0000-0000",
-  "text": "test text test text test text test text test text",
+データの更新は `js/data.js`　の値を置き換えていけばOK！  
+
+```  
+no_△△: {
+  "update": "2020年2月26日 00：00",
+  "stock": "yellow",
+  "name": "△△△ 春日井◯◯店",
+  "time": "06:00 ~ 00:00",
+  "address": "愛知県春日井市◯◯町△丁目◯◯◯",
+  "latlng":{lat: 35.2362946, lng: 136.9330821},
+  "tel": "◯◯◯◯-◯◯-◯◯◯◯",
+  "text": "僅かだが在庫あり",
 },
 no_x: {
   ...
