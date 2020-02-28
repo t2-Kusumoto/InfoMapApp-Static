@@ -9,13 +9,12 @@ _js/data.js_　の値を置き換えていけばOK！
 no_△: {
   "update": "2020年2月25日 00：00",
   "name": "△△市役所",
-  "stat": "green",
+  "stock": "green",
   "time": "08:30 ~ 17:15",
   "address": "xx県△△市〇〇町1丁目〇〇" ,
   "latlng": {lat: 20.42576, lng: 136.0812308},
   "tel": "000-0000-0000",
   "text": "test text test text test text test text test text",
-  "link": "https://exsample.com"
 },
 no_x: {
   ...
