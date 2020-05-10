@@ -1,6 +1,6 @@
 # Info Map App (Static version)  
 
-An easy-to-use app that displays information about a region on Google Maps 　
+An easy-to-use app that displays information about a region on Google Maps. 　
 
 Originally, it was created as an app that shows the sales status of masks at neighboring stores.  
 
@@ -14,13 +14,13 @@ Only need this　　
 - html knowledge
 - Get API key for google maps  
 
-Place a marker at any position on google map and click it to display the information in the opened window　　
+Place a marker at any position on google map and click it to display the information in the opened window.　　
 
-The color of the marker can be changed according to the content of information (Valid only for one type of information)　　
+The color of the marker can be changed according to the content of information (Valid only for one type of information).　　
 
-The administrator manually updates the information. (Therefore, it can be used when the update frequency is about every other day and within a narrow region.)
+The administrator manually updates the information (Therefore, it can be used when the update frequency is about every other day and within a narrow region).
 
-It is easy to use even without advanced knowledge, and I want you to use it according to the actual situation in a very small area (for example, whether relief supplies have arrived at the time of disaster)　　
+It is easy to use even without advanced knowledge, and I want you to use it according to the actual situation in a very small area (for example, whether relief supplies have arrived at the time of disaster).　　
 
 
 ![map image](./img/mapImage.png)  
@@ -66,7 +66,7 @@ no_x: {
 ```
 
 Here, the value of **"marker"** determines the marker color.  
-The marker type will be the corresponding value of **"Icons"**
+The marker type will be the corresponding value of **"Icons"**.
 
 ```
 
@@ -121,4 +121,4 @@ for (let num in Data) {
 ```  
 
 You can display as many markers as you like!
-Please increase the **block** of `data.js`
+Please increase the **block** of `data.js`.
