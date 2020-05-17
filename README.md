@@ -5,8 +5,7 @@ An easy-to-use app that displays information about a region on Google Maps. 　
 Originally, it was created as an app that shows the sales status of masks at neighboring stores.  
 
 NOTE   
-_I can not speak English.  
-This sentence was created entirely by machine translation._  
+_This sentence was created entirely by machine translation._  
 
 ## Description  
 
